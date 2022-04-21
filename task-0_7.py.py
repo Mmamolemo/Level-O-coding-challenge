@@ -3,6 +3,6 @@ def temperature_fah(celsius):
     print(fahrenheit)
     
     
-def tempearture_cels(fahrenheit):
+def temperature_cels(fahrenheit):
     celsuis = (fahrenheit - 32) * 5.0/9.0
     print(celsuis)
