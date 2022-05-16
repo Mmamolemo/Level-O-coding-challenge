@@ -1,8 +1,9 @@
-def maximum_number(a,b,c):
-    if a > b and a > c:
-        print(a)
-    if b > a and b > c:
-        print(b)
-    if c > a and c > b:
-        print(c)
+def maximum_number(num1,num2,num3):
+    if num1 > num2 and num1 > num3:
+        print(num1)
+    if num2 > num1 and num2 > num3:
+        print(num2)
+    if num3 > num1 and num3 > num2:
+        print(num3)
+        
         
