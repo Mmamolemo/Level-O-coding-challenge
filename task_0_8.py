@@ -1,27 +1,27 @@
 def time():
-    x = int(input('Enter a number:'))
-    h = 0
-    m = 0
-    if x < 59:
-        m = x
-        if m == 1:
-            print(m, ' minute')
-        elif (m == 0 or m > 1):
-            print(m, ' minutes')
+    number = int(input)
+    hours = 0
+    minutes= 0
+    if number < 59:
+        minutes = number
+        if minutes == 1:
+            print(minutes, ' minute')
+        elif (minutes == 0 or minutes > 1):
+            print(minutes, ' minutes')
             
-    elif x > 59:
-        h = x//60
-        m = x - (h * 60)
+    elif number > 59:
+        hours = number//60
+        minutes = number - (hours * 60)
         
-        if h == 1 and m == 0:
-            print(h, ' hour, ', m, ' minutes')
-        elif h == 1 and m == 1:
-            print(h, ' hour, ', m, ' minute')
-        elif h > 1 and m == 1:
-            print(h, ' hours, ', m, ' minute')
-        elif h == 1 and m > 1:
-            print(h, ' hour, ', m, ' minutes')
+        if hours == 1 and minutes == 0:
+            print(hours, ' hour, ', minutes, ' minutes')
+        elif hours == 1 and minutes == 1:
+            print(hours, ' hour, ', minutes, ' minute')
+        elif hours > 1 and minutes == 1:
+            print(hours, ' hours, ', minutes, ' minute')
+        elif hours == 1 and minutes > 1:
+            print(hours, ' hour, ', minutes, ' minutes')
         else:
-            print(h, ' hours, ', m, ' minutes')
+            print(hours, ' hours, ', minutes, ' minutes')
 
 time()
