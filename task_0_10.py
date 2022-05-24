@@ -20,7 +20,8 @@ def common(str1,str2):
                     same += str2[letter]
                 letters = letters + 1
             letter = letter + 1
-
+    same = list(dict.fromkeys(same))
+    words = ', '.join(same).lower()
     return same
 
 
