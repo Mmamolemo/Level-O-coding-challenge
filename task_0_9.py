@@ -1,3 +1,4 @@
+
 vowels = "aeiou"
 
 def checkVowels(words):
@@ -8,7 +9,7 @@ def checkVowels(words):
             final += vowel
 
     final = list(dict.fromkeys(final))    
-    test1 = ', '.join(final)      
-    print(test1)
+    name = ', '.join(final)      
+    print(name)
 
 
