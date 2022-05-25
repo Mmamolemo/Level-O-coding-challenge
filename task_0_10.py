@@ -1,5 +1,6 @@
 def common(str1,str2):
     same = []
+    str1, str2 = str1.lower(), str2.lower()
 
     letter = 0
     if len(str1) >= len(str2):
@@ -11,7 +12,7 @@ def common(str1,str2):
                 letters = letters + 1
             letter = letter + 1
 
-        return same
+        return ', '.join(same).lower()
     else:
         while letter < len(str2):
             letters = 0
@@ -21,7 +22,9 @@ def common(str1,str2):
                 letters = letters + 1
             letter = letter + 1
     same = list(dict.fromkeys(same))
-    words = ', '.join(same).lower()
+    name = ', '.join(same).lower()
+    print("Common letters:",name)
     return same
+
 
 
