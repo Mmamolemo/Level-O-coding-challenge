@@ -1,4 +1,5 @@
 def hello(string):
-    return 'Hello '  + string
-print(hello("Tshepo"))
+    print('Hello '  + string + '!')
+
+hello("Tshepo")
    
