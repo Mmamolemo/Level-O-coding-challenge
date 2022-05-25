@@ -1,7 +1,5 @@
-
-vowels = "aeiou"
-
-def checkVowels(words):
+def check_vowels(words):
+    vowels = "aeiou"
     final = []
     words = words.lower()
     for vowel in words:
@@ -10,6 +8,7 @@ def checkVowels(words):
 
     final = list(dict.fromkeys(final))    
     name = ', '.join(final)      
-    print(name)
+    print("Vowels:",name)
+check_vowels("UMUZI")
 
 
