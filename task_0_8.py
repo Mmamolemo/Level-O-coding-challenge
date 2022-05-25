@@ -1,4 +1,4 @@
-def time():
+def time(numbers):
     number = int(input)
     hours = 0
     minutes= 0
