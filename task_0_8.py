@@ -3,7 +3,7 @@ def time(nums):
     number = nums
     hours = 0
     minutes = 0
-    if number < 59:
+    if number < 60:
         minutes = number
         if minutes == 1:
             print(minutes, 'minute')
