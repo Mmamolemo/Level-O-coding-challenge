@@ -6,11 +6,12 @@ def time(nums):
     if number < 60:
         minutes = number
         if minutes == 1:
-            print(minutes, 'minute')
+            print("0 hours",minutes, 'minute')
         elif (minutes == 0 or minutes > 1):
-            print(minutes, 'minutes')
+            print("0 hours",minutes, 'minutes')
+        
             
-    elif number > 59:
+    elif number > 60:
         hours = number//60
         minutes = number - (hours * 60)
         
